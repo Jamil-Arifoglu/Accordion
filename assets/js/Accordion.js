@@ -1,7 +1,7 @@
 $(document).ready(function () {
   let $btn = $("button");
   let $lorem = $(".lorem");
-  let icon = $("i");
+  
 
  
   let styl = {
@@ -18,7 +18,8 @@ $(document).ready(function () {
 
 
   $(".btn").click(function () {
-    $(icon).toggleClass("active");
+    let $icon = $(this).find("i");
+    $icon.toggleClass("active",);
    
     $(this).next().slideToggle();
     $(".lorem").not($(this).next()).slideUp();
